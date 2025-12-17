@@ -7,15 +7,15 @@ def index():
   title ='Home Page'
   return render_template('index.html', title='Home Page')
 
-@app.route('/About')
-def About():
-  title = 'About Page'
+@app.route('/about')
+def about():
+  title = 'about Page'
   name = 'Nonlaphan'
   email = 'std.67122420228@ubru.ac.th'
   mobile = '092-642-0363'
   age = 20
-  return render_template('About.html', 
-                         title='About Page',
+  return render_template('about.html', 
+                         title='about Page',
                          name=name,
                          email=email,
                          mobile=mobile,
