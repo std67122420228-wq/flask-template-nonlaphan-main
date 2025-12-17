@@ -8,7 +8,7 @@ def index():
   return render_template('index.html', title='Home Page')
 
 @app.route('/About')
-def about():
+def About():
   title = 'About Page'
   name = 'Nonlaphan'
   email = 'std.67122420228@ubru.ac.th'
@@ -24,7 +24,7 @@ def about():
 @app.route('/favorite/foods')
 def favorite_foods():
   title = 'Favorite Foods Page'
-  foods = [ 'พิซซ่า', 'ก๋วยเตี๋ยว', 'คะน้าหมูกรอบ',]
+  foods = [ 'พิซซ่า', 'ก๋วยเตี๋ยว', 'คะน้าหมูกรอบ','กระเพรา']
   return render_template('favorite_foods.html',
                          title=title,
                          foods=foods)               
